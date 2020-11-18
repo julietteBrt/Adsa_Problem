@@ -1,7 +1,6 @@
-#!/usr/bin/env python
 # coding: utf-8
 
-# In[14]:
+
 
 
 suspects = [1,4,5]
@@ -13,7 +12,6 @@ adjacency_matrix = [[0, 1, 0, 0, 1, 1, 0, 0, 0, 0], [1, 0, 1, 0, 0, 0, 1, 0, 0, 
 dead_players = [0]
 
 
-# In[15]:
 
 
 def getSusPairs(suspects, adjacency_matrix,dead_players):
@@ -32,14 +30,10 @@ def getSusPairs(suspects, adjacency_matrix,dead_players):
     return suspects_pairs
 
 
-# In[16]:
 
 
 suspects = getSusPairs(suspects,adjacency_matrix,dead_players)
 print(suspects)
-
-
-# In[ ]:
 
 
 
