@@ -14,13 +14,13 @@ dead_players = [0]
 
 
 
-def getSusPairs(suspects, adjacency_matrix,dead_players):
+def getSusPairs(suspects, adjacency_matrix, dead_players):
     """Return the pairs of suspects of a game.
     
     :param suspects: Array of suspect players.
     :param adjacency_matrix: Matrix of players that have seen each other.
     :param dead_players: Array of players that have been eliminated.
-    :return: Array of pairs of suspects.
+    :return: Array of pairs of non-adjacent points (pairs of suspects).
     """
     suspects_pairs = []
     for suspect in suspects:
